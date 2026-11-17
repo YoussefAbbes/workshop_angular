@@ -3,6 +3,10 @@
   <div>
     <h2>Zone de notifications</h2>
     <p>Vous avez 2 nouvelles notifications.</p>
-    <p class="notification">Une nouvelle conférence est disponible.</p>
-    <p class="notification">Sami vous a envoyé une invitation.</p>
+    <button (click)="afficher = !afficher">Afficher les notifications</button>
+    @if (afficher) {
+      <p class="notification">Une nouvelle conférence est disponible.</p>
+      <p class="notification">Sami vous a envoyé une invitation.</p>
+    }
   </div>
+</section>

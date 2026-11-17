@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './notifications.css',
 })
 export class Notifications {
-
+  afficher = false;
 }

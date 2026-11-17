@@ -2,10 +2,12 @@
   <div class="icon">👥</div>
   <div>
     <h2>Liste des amis</h2>
+    <input type="text" [(ngModel)]="nom" />
+    <p>Nom saisi : {{ nom }}</p>
     <ul>
-      <li>Sami</li>
-      <li>Youssef</li>
-      <li>Amine</li>
+      @for (ami of amis; track ami) {
+        <li>{{ ami }}</li>
+      }
     </ul>
   </div>
 </section>
